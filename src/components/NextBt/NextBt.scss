@@ -1,0 +1,23 @@
+.nextBt {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 66px;
+  padding: 0;
+  background-color: #ff9927;
+  bottom: (safe-area-inset-bottom);
+  bottom: 0;
+  cursor: pointer;
+  .nextBtText {
+    position: absolute;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.57px;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+  }
+}
