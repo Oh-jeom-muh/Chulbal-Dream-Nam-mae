@@ -1,0 +1,25 @@
+.headerContainer {
+    margin-top: 58px;
+
+    .headerTitle {
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+
+    .headerLines {
+        margin-bottom: 15px;
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 41px; 
+        letter-spacing: -0.54px;
+    }
+
+    .headerSubtitle {
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.42px;
+        color: #555;
+    }
+}
