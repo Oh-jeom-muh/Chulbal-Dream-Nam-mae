@@ -1,0 +1,23 @@
+.splash {
+  display: flex;
+  height: 100vh;
+  padding: 81.07vw 0 63px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  .titleLogo {
+    width: 130px;
+    padding-left: 30px;
+    margin: 0 auto;
+  }
+
+  .txtTeamName {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.42px;
+    color: rgba(85, 85, 85, 0.4);
+  }
+}
