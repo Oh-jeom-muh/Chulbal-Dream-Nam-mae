@@ -4,7 +4,7 @@ import 'style/header.scss';
 const Header = ({ id, title, lines, subtitle }) => {
   return (
     <div className="headerContainer">
-      <h1 className="headerTitle">{title}</h1>
+      <div className="headerTitle">{title}</div>
       <p className="headerLines">
         {lines.map((line, index) => (
           <>
@@ -13,7 +13,7 @@ const Header = ({ id, title, lines, subtitle }) => {
           </>
         ))}
       </p>
-      <span className="headerSubtitle">{subtitle}</span>
+      <p className="headerSubtitle">{subtitle}</p>
     </div>
   );
 };

@@ -1,11 +1,8 @@
 import React from 'react';
-<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 import Header from 'components/Header';
 import 'style/start.scss';
-=======
-import "./Splash.scss";
->>>>>>> master
+import './Splash.scss';
 
 const Start = () => {
   const navigate = useNavigate();
@@ -21,8 +18,11 @@ const Start = () => {
       <div className="startBtnWrap">
         {Btn.map(({ id, className, text, link }) => (
           <button
+            type="button"
             key={id}
-            className={`actionBtn ${className}`}
+            className={
+              link === 'choose' ? `actionBtn ${className} ` : `actionBtn`
+            }
             onClick={() => navigate(`/${link}`)}
           >
             {text}
@@ -38,13 +38,12 @@ export default Start;
 const Btn = [
   {
     id: 1,
-    className: 'chooseFoodBtn',
+    className: 'on',
     text: '먹을 음식 고르기',
     link: 'choose',
   },
   {
     id: 2,
-    className: 'viewFoodsBtn',
     text: ' 먹은 음식들 보러가기',
     link: 'eat',
   },

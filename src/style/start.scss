@@ -15,16 +15,16 @@
             border-radius: 12px;
             font-size: 19px;
             font-weight: 700;
+            background-color: rgba(255, 153, 39, 0.09);
         }
 
-        .chooseFoodBtn {
+        .actionBtn:first-child{
             margin-bottom: 13px;
+        }
+
+        .on {
             color: #fff;
             background-color: #FF9927;
-        }
-
-        .viewFoodsBtn {
-            background-color: rgba(255, 153, 39, 0.09);
         }
     }
 }
