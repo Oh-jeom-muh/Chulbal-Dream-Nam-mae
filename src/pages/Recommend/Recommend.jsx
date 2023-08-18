@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Recommend.scss";
-import Check from "./../../img/check.svg";
+// import Check from "./../../img/check.svg";
 import NextBt from "components/NextBt/NextBt";
 
 const Recommend = () => {
@@ -23,7 +23,11 @@ const Recommend = () => {
             onClick={() => optionCheck(option.id)}
           >
             <p className="RecommendText">{option.text}</p>
-            <img className="RecommendCheck" src={Check} alt="RecommendCheck" />
+            <img
+              className="RecommendCheck"
+              src="../img/check.svg"
+              alt="RecommendCheck"
+            />
           </div>
         ))}
       </div>

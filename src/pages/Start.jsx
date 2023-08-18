@@ -1,11 +1,7 @@
-import React from 'react';
-<<<<<<< HEAD
-import { useNavigate } from 'react-router-dom';
-import Header from 'components/Header';
-import 'style/start.scss';
-=======
-import "./Splash.scss";
->>>>>>> master
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Header from "components/Header";
+import "style/start.scss";
 
 const Start = () => {
   const navigate = useNavigate();
@@ -15,7 +11,7 @@ const Start = () => {
       <Header
         id="start"
         title="👀"
-        lines={['오늘은', '어떤걸 먹을지', '도와드릴게요.']}
+        lines={["오늘은", "어떤걸 먹을지", "도와드릴게요."]}
         subtitle="나에게 딱 맞는 음식을 추천해드릴게요"
       />
       <div className="startBtnWrap">
@@ -38,14 +34,14 @@ export default Start;
 const Btn = [
   {
     id: 1,
-    className: 'chooseFoodBtn',
-    text: '먹을 음식 고르기',
-    link: 'choose',
+    className: "chooseFoodBtn",
+    text: "먹을 음식 고르기",
+    link: "choose",
   },
   {
     id: 2,
-    className: 'viewFoodsBtn',
-    text: ' 먹은 음식들 보러가기',
-    link: 'eat',
+    className: "viewFoodsBtn",
+    text: " 먹은 음식들 보러가기",
+    link: "eat",
   },
 ];
