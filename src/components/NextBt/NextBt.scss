@@ -6,8 +6,11 @@
   height: 66px;
   padding: 0;
   background-color: #ff9927;
-  bottom: (safe-area-inset-bottom);
-  bottom: 0;
+  bottom: env(safe-area-inset-bottom);
+  top: 746px;
+
+  // bottom 값을 0으로 해서 어떤 높이에서도 하단에 위치하게 하고싶은데 노치대응 속성을 주면 동시에 줄 수 없는걸까?bottom: calc(env(safe-area-inset-bottom) + 0);
+
   cursor: pointer;
   .nextBtText {
     position: absolute;
