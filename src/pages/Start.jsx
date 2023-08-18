@@ -10,9 +10,12 @@ const Start = () => {
   return (
     <div className="startContainer">
       <Header
-        id="start"
         title="&#x1F440;"
-        lines={['오늘은', '어떤걸 먹을지', '도와드릴게요.']}
+        text={
+          <>
+            오늘은 <br /> 어떤걸 먹을지 <br /> 도와드릴게요.
+          </>
+        }
         subtitle="나에게 딱 맞는 음식을 추천해드릴게요"
       />
       <div className="startBtnWrap">

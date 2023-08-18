@@ -12,7 +12,7 @@ const Router = () => {
         <Route path="/loading" element={<Loading />} />
         <Route path="/splash" element={<Splash />} />
         <Route path="/" element={<Start />} />
-        <Route path="/R" element={<Recommend />} />
+        <Route path="/choose" element={<Recommend />} />
       </Routes>
     </BrowserRouter>
   );
