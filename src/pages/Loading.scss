@@ -1,0 +1,31 @@
+// Loading.scss
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-container {
+  position: relative;
+  animation: shake 1s infinite;
+}
+
+.imgG {
+  display: block;
+  width: 100%;
+  transform-origin: center;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(-5deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: rotate(5deg);
+  }
+}

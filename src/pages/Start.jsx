@@ -1,18 +1,51 @@
 import React from 'react';
+<<<<<<< HEAD
+import { useNavigate } from 'react-router-dom';
+import Header from 'components/Header';
+import 'style/start.scss';
+=======
+import "./Splash.scss";
+>>>>>>> master
 
 const Start = () => {
+  const navigate = useNavigate();
+
   return (
-    <div style={{ padding: '22px' }}>
-      <span style={{ fontSize: '45px' }}>&#x1F440;</span>
-      <p style={{ fontSize: '27px', fontWeight: '700' }}>
-        나만을 위한 음식
-        <br />
-        추천을 위해
-        <br />
-        10초만 내어주세요!
-      </p>
+    <div className="startContainer">
+      <Header
+        id="start"
+        title="👀"
+        lines={['오늘은', '어떤걸 먹을지', '도와드릴게요.']}
+        subtitle="나에게 딱 맞는 음식을 추천해드릴게요"
+      />
+      <div className="startBtnWrap">
+        {Btn.map(({ id, className, text, link }) => (
+          <button
+            key={id}
+            className={`actionBtn ${className}`}
+            onClick={() => navigate(`/${link}`)}
+          >
+            {text}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default Start;
+
+const Btn = [
+  {
+    id: 1,
+    className: 'chooseFoodBtn',
+    text: '먹을 음식 고르기',
+    link: 'choose',
+  },
+  {
+    id: 2,
+    className: 'viewFoodsBtn',
+    text: ' 먹은 음식들 보러가기',
+    link: 'eat',
+  },
+];
