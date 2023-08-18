@@ -1,7 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 import Header from 'components/Header';
 import 'style/start.scss';
+=======
+import "./Splash.scss";
+>>>>>>> master
 
 const Start = () => {
   const navigate = useNavigate();
