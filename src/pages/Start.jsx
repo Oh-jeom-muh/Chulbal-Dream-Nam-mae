@@ -11,7 +11,7 @@ const Start = () => {
     <div className="startContainer">
       <Header
         id="start"
-        title="👀"
+        title="&#x1F440;"
         lines={['오늘은', '어떤걸 먹을지', '도와드릴게요.']}
         subtitle="나에게 딱 맞는 음식을 추천해드릴게요"
       />
@@ -21,7 +21,7 @@ const Start = () => {
             type="button"
             key={id}
             className={
-              link === 'choose' ? `actionBtn ${className} ` : `actionBtn`
+              link === 'choose' ? `actionBtn ${className}` : `actionBtn`
             }
             onClick={() => navigate(`/${link}`)}
           >
