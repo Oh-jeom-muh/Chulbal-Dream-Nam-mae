@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import NextBt from 'components/NextBt/NextBt';
+import InforSection from 'components/InfoSection/InforSection';
 import Loading from './Loading';
 import './Eating.scss';
 
@@ -27,20 +28,25 @@ const Eating = () => {
       <div className="eating">
         <div className="wrapInfo">
           <div className="eatingArea">
-            <strong className="eatingTitle">
-              일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십
-            </strong>
-            <p className="eatingDesc">
-              일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십
-            </p>
+            <strong className="eatingTitle">떡볶이</strong>
+            <p className="eatingDesc">{selectedFood[0]?.text}</p>
           </div>
           <div className="eatingNum">
             256<span className="eatingKal">&#40;kal&#41;</span>
           </div>
         </div>
-        <strong className="eatingTitle">영양 정보</strong>
-
-        <strong className="eatingTitle">꿀맛 조합</strong>
+        <InforSection
+          title={'영양 정보'}
+          content={
+            '튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용'
+          }
+        />
+        <InforSection
+          title={'꿀맛 조합'}
+          content={
+            '튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용'
+          }
+        />
         <div className="honeyList">
           <div className="honeyBox" />
           <p className="honetTex">소세지</p>
