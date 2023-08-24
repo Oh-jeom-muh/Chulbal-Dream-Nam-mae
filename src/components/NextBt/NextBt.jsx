@@ -3,9 +3,9 @@ import "./NextBt.scss";
 
 const NextBt = () => {
   return (
-    <div className="nextBt">
-      <p className="nextBtText">나에게 딱 맞는 음식 보기</p>
-    </div>
+    <button className="nextBt" type="button">
+      나에게 딱 맞는 음식 보기
+    </button>
   );
 };
 
