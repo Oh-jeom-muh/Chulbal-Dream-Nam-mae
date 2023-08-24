@@ -1,12 +1,12 @@
-import React, { useCallback } from "react";
-import "./Option.scss";
+import React, { useCallback } from 'react';
+import './Option.scss';
 
 const Option = ({ isCheck, setISCheck }) => {
   const handleCheck = useCallback((e) => {
-    const { name, value } = e.target;
+    const { title, value } = e.target;
     setISCheck((isCheck) => ({
       ...isCheck,
-      [name]: isCheck[name] === value ? "" : value,
+      [title]: isCheck[title] === value ? '' : value,
     }));
   }, []);
 
@@ -17,10 +17,10 @@ const Option = ({ isCheck, setISCheck }) => {
           {option.text.map((text) => (
             <button
               className={`RecommendBox ${
-                isCheck[option.title] === text ? "checked" : ""
+                isCheck[option.title] === text ? 'checked' : ''
               }`}
               key={text}
-              name={option.title}
+              title={option.title}
               value={text}
               onClick={handleCheck}
             >
@@ -28,7 +28,7 @@ const Option = ({ isCheck, setISCheck }) => {
               <img
                 className="RecommendCheck"
                 src="../img/check.svg"
-                alt="RecommendCheck"
+                alt=""
               />
             </button>
           ))}
@@ -41,8 +41,12 @@ const Option = ({ isCheck, setISCheck }) => {
 export default Option;
 
 const OPTION_LIST = [
-  { id: 1, title: "meal", text: ["점심", "저녁"] },
-  { id: 2, title: "age", text: ["20대 이하", "20대 이상"] },
-  { id: 3, title: "spicy", text: ["맵초보", "맵고수"] },
-  { id: 4, title: "type", text: ["다이어트식", "일반식"] },
+  { id: 1, title: 'meal', text: ['점심', '저녁'] },
+  { id: 2, title: 'age', text: ['20대 이하', '20대 이상'] },
+  {
+    id: 3,
+    title: 'spicy',
+    text: ['맵초보', '맵달인'],
+  },
+  { id: 4, title: 'type', text: ['다이어트식', '일반식'] },
 ];
