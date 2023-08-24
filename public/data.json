@@ -1,0 +1,13 @@
+[{"id":1,"food":"떡볶이","imgs":[],"text":"매콤하고 짭쪼름한 맛이 일품",
+    "nutrients":[
+        {"nutrient":"나트륨","value":1073.09},
+        {"nutrient":"탄수화물","value":45.39},
+        {"nutrient":"당류","value":7.31},
+        {"nutrient":"지방","value":3.5},
+        {"nutrient":"트랜스지방","value":0},
+        {"nutrient":"포화지방","value":4.5},
+        {"nutrient":"단백질","value":8.5}
+        ]
+        ,"list":["치즈","소세지","쿨피스"]
+    }
+]

@@ -10,7 +10,7 @@ const Start = () => {
   return (
     <div className="startContainer">
       <Header
-        title="&#x1F440;"
+        title="&#x1F64C;"
         text={
           <>
             오늘은 <br /> 어떤걸 먹을지 <br /> 도와드릴게요.
