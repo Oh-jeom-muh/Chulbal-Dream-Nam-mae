@@ -3,13 +3,13 @@
 
   .buttonBox {
     display: flex;
-    justify-content: space-between;
+    gap: 16px;
   }
   .RecommendBox {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    width: 158px;
+    width: 50%;
     height: 66px;
     background-color: rgba(238, 125, 0, 0.09);
     border-radius: 10px;
