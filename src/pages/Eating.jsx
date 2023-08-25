@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import NextBt from 'components/NextBt/NextBt';
+import NextBt from 'components/NextBtn/NextBtn';
 import InforSection from 'components/InfoSection/InforSection';
 import Loading from './Loading';
 import './Eating.scss';

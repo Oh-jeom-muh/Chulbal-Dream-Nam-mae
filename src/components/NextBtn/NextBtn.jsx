@@ -2,8 +2,11 @@ import React from 'react';
 import './NextBt.scss';
 import { useNavigate } from 'react-router-dom';
 
-const NextBt = ({ text, selectedFood }) => {
+const NextBtn = ({ isCheck, text, selectedFood }) => {
   const navigate = useNavigate();
+  const { meal, age, spicy, type } = isCheck || {};
+
+  const allChecked = meal && age && spicy && type;
 
   const handleSubmit = () => {
     if (selectedFood) {
@@ -31,14 +34,14 @@ const NextBt = ({ text, selectedFood }) => {
         navigate('/');
       }
     } else {
-      navigate('/eat');
+      if (allChecked) navigate('/eat');
     }
   };
 
   return (
-    <button className="nextBt" type="button" onClick={handleSubmit}>
-      {text}
+    <button className="nextBtn" type="button" onClick={handleSubmit}>
+      {isCheck && !allChecked ? '모두 선택해 주세요' : text}
     </button>
   );
 };
-export default NextBt;
+export default NextBtn;
