@@ -12,7 +12,7 @@ const Honey = () => {
         setHoneyData(honeyList);
       });
   }, []);
-  console.log(honeyData);
+  console.log(honeyData.honey);
 
   return (
     <>
@@ -20,8 +20,10 @@ const Honey = () => {
         <strong className="eatingTitle">꿀맛 조합</strong>
         {honeyData.map((data, index) => (
           <div className="honeyList" key={index}>
-            <div className="honeyBox" />
-            <p className="honeyText">{data}</p>
+            <div className="honeyBox">
+              <img className="honeyImg" src={data.img} alt="꿀맛조합" />
+            </div>
+            <p className="honeyText">{data.honey}</p>
           </div>
         ))}
       </div>
