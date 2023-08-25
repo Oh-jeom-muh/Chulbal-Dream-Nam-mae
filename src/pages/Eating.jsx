@@ -3,6 +3,7 @@ import NextBtn from 'components/NextBtn/NextBtn';
 import InforSection from 'components/InfoSection/InforSection';
 import Loading from './Loading';
 import './Eating.scss';
+import Honey from 'components/Honey/Honey';
 
 const Eating = () => {
   const [selectedFood, setSelectedFood] = useState(null);
@@ -18,6 +19,8 @@ const Eating = () => {
   }, []);
 
   if (!selectedFood) return <Loading />;
+
+  // console.log(selectedFood[0]?.list);
 
   return (
     <>
@@ -47,10 +50,7 @@ const Eating = () => {
             '튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용'
           }
         />
-        <div className="honeyList">
-          <div className="honeyBox" />
-          <p className="honetTex">소세지</p>
-        </div>
+        <Honey list={selectedFood[0]?.list} />
         <NextBtn
           text={'지도에서 맛집 보기'}
           selectedFood={selectedFood[0]?.food}
