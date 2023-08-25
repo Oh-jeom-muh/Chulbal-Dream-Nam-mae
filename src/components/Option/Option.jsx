@@ -1,37 +1,52 @@
-import React, { useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import './Option.scss';
 
 const Option = ({ isCheck, setISCheck }) => {
-  const handleCheck = useCallback((e) => {
-    const { title, value } = e.target;
-    setISCheck((isCheck) => ({
-      ...isCheck,
-      [title]: isCheck[title] === value ? '' : value,
-    }));
-  }, []);
+  const [activeIds, setActiveIds] = useState([1]);
+
+  const handleCheck = useCallback(
+    (e) => {
+      const { title, value } = e.target;
+      const currentOptionIndex =
+        OPTION_LIST.findIndex((option) => option.title === title) + 1;
+
+      if (isCheck[title] === value) {
+        setActiveIds((ids) => ids.filter((id) => id <= currentOptionIndex));
+        setISCheck((prev) => {
+          let newIsCheck = { ...prev };
+          for (let i = currentOptionIndex; i <= OPTION_LIST.length; i++) {
+            const optionTitle = OPTION_LIST[i - 1].title;
+            newIsCheck[optionTitle] = '';
+          }
+          return newIsCheck;
+        });
+      } else {
+        setActiveIds((ids) => [...ids, currentOptionIndex + 1]);
+        setISCheck((prev) => ({ ...prev, [title]: value }));
+      }
+    },
+    [isCheck]
+  );
 
   return (
     <div className="RecommendWrap">
       {OPTION_LIST.map((option, index) => (
         <div className="buttonBox" key={index}>
-          {option.text.map((text) => (
-            <button
-              className={`RecommendBox ${
-                isCheck[option.title] === text ? 'checked' : ''
-              }`}
-              key={text}
-              title={option.title}
-              value={text}
-              onClick={handleCheck}
-            >
-              {text}
-              <img
-                className="RecommendCheck"
-                src="../img/check.svg"
-                alt=""
-              />
-            </button>
-          ))}
+          {activeIds.includes(option.id) &&
+            option.text.map((text) => (
+              <button
+                className={`RecommendBox ${
+                  isCheck[option.title] === text ? 'checked' : ''
+                }`}
+                key={text}
+                title={option.title}
+                value={text}
+                onClick={handleCheck}
+              >
+                {text}
+                <img className="RecommendCheck" src="../img/check.svg" alt="" />
+              </button>
+            ))}
         </div>
       ))}
     </div>

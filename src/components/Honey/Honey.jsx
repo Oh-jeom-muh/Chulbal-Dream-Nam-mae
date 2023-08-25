@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./Honey.scss";
+import React, { useEffect, useState } from 'react';
+import './Honey.scss';
 
 const Honey = () => {
   const [honeyData, setHoneyData] = useState([]);
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch('/data.json')
       .then((res) => res.json())
       .then((data) => {
         const honeyList = data.map((item) => item.list);

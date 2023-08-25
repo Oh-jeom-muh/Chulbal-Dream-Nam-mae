@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Recommend.scss';
-import NextBt from 'components/NextBt/NextBt';
+import NextBtn from 'components/NextBtn/NextBtn';
 import Header from 'components/Header';
 import Option from 'components/Option/Option';
 
@@ -25,7 +25,7 @@ const Recommend = () => {
         subtitle="나에게 딱 맞는 음식을 추천해드릴게요"
       />
       <Option isCheck={isCheck} setISCheck={setISCheck} />
-      <NextBt isCheck={isCheck} text={'나에게 딱 맞는 음식 보기'} />
+      <NextBtn isCheck={isCheck} text={'나에게 딱 맞는 음식 보기'} />
     </div>
   );
 };
