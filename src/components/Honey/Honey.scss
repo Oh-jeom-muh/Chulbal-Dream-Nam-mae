@@ -1,0 +1,27 @@
+.HoneyWrap {
+  .eatingTitle {
+    display: block;
+    overflow: hidden;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .honeyList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .honeyBox {
+    width: 99px;
+    height: 99px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    margin: 20px 10px 8px;
+  }
+}

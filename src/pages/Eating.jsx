@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import NextBt from 'components/NextBt/NextBt';
-import Loading from './Loading';
-import './Eating.scss';
+import React, { useEffect, useState } from "react";
+import NextBt from "components/NextBt/NextBt";
+import Loading from "./Loading";
+import Honey from "components/Honey/Honey";
+import "./Eating.scss";
 
 const Eating = () => {
   const [selectedFood, setSelectedFood] = useState(null);
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('data.json')
+      fetch("data.json")
         .then((res) => res.json())
         .then((data) => {
           setSelectedFood(data);
@@ -39,14 +40,9 @@ const Eating = () => {
           </div>
         </div>
         <strong className="eatingTitle">영양 정보</strong>
-
-        <strong className="eatingTitle">꿀맛 조합</strong>
-        <div className="honeyList">
-          <div className="honeyBox" />
-          <p className="honetTex">소세지</p>
-        </div>
+        <Honey />
         <NextBt
-          text={'지도에서 맛집 보기'}
+          text={"지도에서 맛집 보기"}
           selectedFood={selectedFood[0]?.food}
         />
       </div>
