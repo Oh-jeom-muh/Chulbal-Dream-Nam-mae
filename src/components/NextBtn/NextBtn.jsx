@@ -1,5 +1,5 @@
 import React from 'react';
-import './NextBt.scss';
+import './NextBtn.scss';
 import { useNavigate } from 'react-router-dom';
 
 const NextBtn = ({ isCheck, text, selectedFood }) => {
