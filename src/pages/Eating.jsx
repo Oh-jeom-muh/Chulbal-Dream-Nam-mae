@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import NextBtn from 'components/NextBtn/NextBtn';
-import InforSection from 'components/InfoSection/InforSection';
+import InfoSection from 'components/InfoSection/InfoSection';
 import Loading from './Loading';
 import './Eating.scss';
 import Honey from 'components/Honey/Honey';
@@ -38,13 +38,13 @@ const Eating = () => {
             256<span className="eatingKal">&#40;kal&#41;</span>
           </div>
         </div>
-        <InforSection
+        <InfoSection
           title={'영양 정보'}
           content={
             '튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용'
           }
         />
-        <InforSection
+        <InfoSection
           title={'꿀맛 조합'}
           content={
             '튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용튤립 내용'
