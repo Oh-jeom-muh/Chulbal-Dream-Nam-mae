@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './Honey.scss';
+import "./Honey.scss";
 
 const Honey = ({ list }) => {
   return (

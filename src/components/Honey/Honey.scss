@@ -1,4 +1,6 @@
 .HoneyWrap {
+  display: flex;
+
   .eatingTitle {
     display: block;
     overflow: hidden;
@@ -22,6 +24,13 @@
     height: 99px;
     border: 1px solid #dedede;
     border-radius: 10px;
-    margin: 20px 10px 8px;
+    margin: 0px 10px 8px 0px;
+
+    .img {
+    }
+  }
+
+  .honeyText {
+    margin-bottom: 180px;
   }
 }
