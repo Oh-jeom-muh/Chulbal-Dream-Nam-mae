@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import './InfoSection.scss';
+import React, { useState } from "react";
+import "./InfoSection.scss";
 
 const InfoSection = ({ title, content }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="inforSection">
+    <div className="infoSection">
       <strong className="eatingTitles">
         {title}
         <button
-          className="inforSectionBtn"
+          className="infoSectionBtn"
           type="button"
           aria-expanded={toggle}
           onClick={() => setToggle(!toggle)}
@@ -18,7 +18,7 @@ const InfoSection = ({ title, content }) => {
         </button>
       </strong>
       {toggle && (
-        <p className="inforBox" onClick={() => setToggle(false)}>
+        <p className="infoBox" onClick={() => setToggle(false)}>
           {content}
         </p>
       )}

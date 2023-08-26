@@ -1,19 +1,18 @@
-.wrapHeadBg {
-  height: 318px;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+.eating {
+  box-shadow: 0px -30px 30px rgba(0, 0, 0, 0.05);
 
-.eating{
-  padding: 34px 22px 0;
-  box-shadow:0px -30px 30px rgba(0, 0, 0, 0.05);
+  .wrapHeadBg {
+    height: 318px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 
   .eatingArea {
     width: 70%;
   }
-  
-  .eatingTitle  {
+
+  .eatingTitle {
     display: block;
     overflow: hidden;
     color: #222;
@@ -21,15 +20,16 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.4px;
-    white-space: nowrap;    
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
-  
-  .wrapInfo{
+
+  .wrapInfo {
     display: flex;
+    padding: 34px 22px 0;
     justify-content: space-between;
   }
-  
+
   .eatingDesc {
     overflow: hidden;
     padding-top: 5px;
@@ -38,11 +38,11 @@
     font-weight: 400;
     line-height: 25px;
     letter-spacing: -0.28px;
-    white-space: nowrap;    
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
 
-  .eatingNum{
+  .eatingNum {
     color: #222;
     font-size: 20px;
     font-weight: 700;
@@ -50,29 +50,12 @@
     letter-spacing: -0.4px;
   }
 
-  .eatingKal{
+  .eatingKal {
     padding-left: 4px;
-    color: #9A9A9A;
+    color: #9a9a9a;
     font-size: 11px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: -0.22px;
   }
-  
-  
-.honeyList{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-  
-  .honeyBox {
-    width: 99px;
-    height: 99px;
-    border: 1px solid #DEDEDE;
-    border-radius: 10px;
-    margin: 20px 10px 8px
-  }
-
-}
-

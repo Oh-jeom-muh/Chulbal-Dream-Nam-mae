@@ -14,9 +14,9 @@
       { "nutrient": "단백질", "value": 8.5 }
     ],
     "list": [
-      { "honey": "치즈", "img": "./img/쿨피스png" },
-      { "honey": "소시지", "img": "./img/쿨피스png" },
-      { "honey": "쿨피스", "img": "./img/쿨피스png" }
+      { "honey": "치즈", "img": "./img/쿨피스.png" },
+      { "honey": "소시지", "img": "./img/쿨피스.png" },
+      { "honey": "쿨피스", "img": "./img/쿨피스.png" }
     ]
   }
 ]

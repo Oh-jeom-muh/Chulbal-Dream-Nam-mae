@@ -1,40 +1,39 @@
-.inforSection {
-    position: relative; 
-    margin: 50px 0 20px 0;
- 
-    .eatingTitles {
-        display: block;
-        overflow: hidden;
-        color: #222;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: -0.4px;
-        line-height: 30px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+.infoSection {
+  position: relative;
+  margin: 50px 0 20px 0;
+  padding: 0 22px;
 
-        .inforSectionBtn{
-            padding: 10px;
-            font-size: 0;
-        }
+  .eatingTitles {
+    display: block;
+    overflow: hidden;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    .infoSectionBtn {
+      padding: 10px;
+      font-size: 0;
     }
-    .inforBox {
-        position: absolute;
-        top: 32px;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 13px 12px 11px 15px;
-        border: 1px solid #DEDEDE;
-        border-radius: 10px;
-        background: #FFF;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: -0.24px;
-        line-height: 25px;
-       
-    }
+  }
+  .infoBox {
+    position: absolute;
+    top: 32px;
+    left: 22px;
+    right: 22px;
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 13px 12px 11px 15px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+    line-height: 25px;
+  }
 }

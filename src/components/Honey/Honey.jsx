@@ -4,16 +4,16 @@ import "./Honey.scss";
 
 const Honey = ({ list }) => {
   return (
-    <div className="HoneyWrap">
+    <ul className={`honeyList${list.length > 3 ? " typeColum" : ""}`}>
       {list.map((data, index) => (
-        <div className="honeyList" key={index}>
+        <li key={index}>
           <div className="honeyBox">
-            <img className="honeyImg" src={data.img} alt="꿀맛조합" />
+            <img className="imgG" src={data.img} alt="꿀맛조합" />
           </div>
-          <p className="honeyText">{data.honey}</p>
-        </div>
+          <strong className="honeyText">{data.honey}</strong>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

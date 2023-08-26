@@ -1,36 +1,48 @@
-.HoneyWrap {
-  display: flex;
-
-  .eatingTitle {
-    display: block;
-    overflow: hidden;
-    color: #222;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: -0.4px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.honeyList {
+  margin-left: -17px;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-bottom: 120px;
+  padding: 0 22px;
+  &.typeColum {
+    li {
+      width: 32%;
+    }
   }
 
-  .honeyList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+    padding-left: 17px;
+    box-sizing: border-box;
   }
 
   .honeyBox {
-    width: 99px;
-    height: 99px;
-    border: 1px solid #dedede;
-    border-radius: 10px;
-    margin: 0px 10px 8px 0px;
+    position: relative;
+    overflow: hidden;
 
-    .img {
+    &::after {
+      content: "";
+      position: absolute;
+      border: 1px solid #dedede;
+      border-radius: 10px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    .imgG {
     }
   }
 
   .honeyText {
-    margin-bottom: 180px;
+    display: block;
+    text-align: center;
+    color: #292929;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -0.28px;
+    padding-top: 8px;
   }
 }
