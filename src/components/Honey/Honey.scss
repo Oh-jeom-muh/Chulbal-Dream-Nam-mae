@@ -32,8 +32,6 @@
       top: 0;
       bottom: 0;
     }
-    .imgG {
-    }
   }
 
   .honeyText {
@@ -44,5 +42,7 @@
     line-height: 25px;
     letter-spacing: -0.28px;
     padding-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

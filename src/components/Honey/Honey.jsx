@@ -5,12 +5,12 @@ import "./Honey.scss";
 const Honey = ({ list }) => {
   return (
     <ul className={`honeyList${list.length > 3 ? " typeColum" : ""}`}>
-      {list.map((data, index) => (
+      {list.map(({ img, honey }, index) => (
         <li key={index}>
           <div className="honeyBox">
-            <img className="imgG" src={data.img} alt="꿀맛조합" />
+            <img className="imgG" src={img} alt="" />
           </div>
-          <strong className="honeyText">{data.honey}</strong>
+          <strong className="honeyText">{honey}</strong>
         </li>
       ))}
     </ul>
